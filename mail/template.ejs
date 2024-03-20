@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Space Grotesk", sans-serif;
+        }
+        .container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 500px;
+            height: 450px;
+            border: 1px solid #00000051;
+        }
+        .top {
+            height: 30px;
+            background-color: #5cc580;
+        }
+        .inner {
+            padding-top: 50px;
+        }
+        h1 {
+            padding: 0 50px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: center;
+            padding: 0 50px;
+            margin-bottom: 30px;
+            color: gray;
+        }
+        a {
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: 0;
+            border-radius: 30px;
+            padding: 10px;
+            width: 200px;
+            background-color: #000;
+            color: #fff;
+            margin-bottom: 30px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top"></div>
+        <div class="inner">
+            <h1>That's It! Thank you for your Registration!</h1>
+            <p>We're glad you're here! Before you start exploring Sync, we just need to confirm that your are a friendly human and not an evil robot.</p>
+            <a href="http://localhost:3000/confirmation/<%= confirmCode %>">Confirm Account</a>
+            <p>See you on the website! Love, Sync ❤</p>
+        </div>
+    </div>
+</body>
+</html>
