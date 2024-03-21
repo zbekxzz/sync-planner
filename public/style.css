@@ -1,14 +1,121 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 *,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: #171517;
+}
 
+.text {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #a0a0a0a6;
 }
 
 .container {
+    margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
+}
+
+header {
+    height: 700px;
+}
+
+/*  NAVIGATION  */
+nav {
+    padding: 25px 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-weight: 400;
+    font-size: 35px;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.nav-link:hover {
+    color: #CAF808;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #171517;
+    background-color: #fff;
+    padding: 15px 40px;
+    width: 123px;
+    height: 48px;
+}
+
+
+
+/*  HEADER  */
+.header-inner {
+    padding-top: 165px;
+}
+
+.header-title {
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-btn {
+    font-weight: 500;
+    text-decoration: none;
+    color: #171517;
+    background-color: #caf808;
+    padding: 15px 40px;
+    width: 160px;
+    height: 48px;
+}
+
+.header-subs {
+    margin: 0 auto;
+    width: 333px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #caf808;
 }

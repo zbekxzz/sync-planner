@@ -47,7 +47,7 @@ const UserRoute = require('./routes/User.js');
 app.use('/api/user', UserRoute);
 
 app.get("/", (req, res) => {
-    res.sendFile("pages/index.html");
+    res.sendFile(path.join(__dirname, "/public/pages/index.html"));
 })
 
 app.get('/profile', authenticateToken, (req, res) => {
