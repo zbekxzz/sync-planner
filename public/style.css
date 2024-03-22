@@ -473,3 +473,97 @@ button {
 button:hover {
     background-color: #b2dd0a;
 }
+
+
+
+/*  PROFILE  */
+.profile {
+    height: 800px;
+    background-image: url(images/profile-bg.jpg);
+}
+
+.profile-header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.profile-account {
+    width: 250px;
+    background-color: #1E1E22;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-img {
+    margin-bottom: 13px;
+    width: 120px;
+    height: 120px;
+    background-color: #1E1E22;
+    border: 2px solid #CAF808;
+    border-radius: 50%;
+}
+
+.account-username {
+    font-weight: 500;
+    font-size: 20px;
+    color: #c6ff00;
+    margin-bottom: 5px;
+}
+
+.account-email {
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.account-subs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sub-name {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sub-number {
+    font-weight: 700;
+    font-size: 14px;
+    color: #c6ff00;
+}
+
+.account-status {
+    color: #c6ff00;
+    margin-bottom: 20px;
+}
+
+.profile-settings {
+    width: 500px;
+    background-color: #1E1E22;
+    padding: 30px 25px;
+
+}
+
+.settings-title {
+    font-size: 25px;
+    color: #c6ff00;
+    margin-bottom: 20px;
+}
+
+.profile-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

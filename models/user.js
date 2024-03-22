@@ -5,6 +5,10 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    profileImage: {
+        type: String,
+        default: 0
+    },
     role: {
         type: String,
         required: true,
@@ -13,6 +17,14 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true
+    },
+    totalTasks: {
+        type: Number,
+        default: 0
+    },
+    totalPomodoro: {
+        type: Number,
+        default: 0
     },
     password: {
         type: String,
