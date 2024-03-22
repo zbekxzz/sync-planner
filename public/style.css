@@ -8,7 +8,12 @@
     font-family: "Space Grotesk", sans-serif;
     font-size: 14px;
     color: #fff;
-    background-color: #171517;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #a0a0a0a6;
 }
 
 .text {
@@ -25,6 +30,7 @@
 }
 
 header {
+    background-color: #171517;
     height: 700px;
 }
 
@@ -73,8 +79,12 @@ nav ul li {
     padding: 15px 40px;
     width: 123px;
     height: 48px;
+    transition: background-color .2s ease;
 }
 
+.nav-btn:hover {
+    background-color: #e4e4e4;
+}
 
 
 /*  HEADER  */
@@ -89,14 +99,18 @@ nav ul li {
     margin-bottom: 30px;
 }
 
-.header-btn {
+.btn {
+    width: fit-content;
     font-weight: 500;
     text-decoration: none;
     color: #171517;
     background-color: #caf808;
     padding: 15px 40px;
-    width: 160px;
-    height: 48px;
+    transition: background-color .2s ease;
+}
+
+.btn:hover {
+    background-color: #b2dd0a;
 }
 
 .header-subs {
@@ -118,4 +132,257 @@ nav ul li {
     font-weight: 500;
     font-size: 14px;
     color: #caf808;
+}
+
+
+
+/*  SECTION  */
+main {
+    background-color: #171517;
+}
+section {
+    background-color: #171517;
+}
+
+.planner {
+    height: 400px;
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.section-name {
+    font-weight: 500;
+    font-size: 18px;
+    color: #caf808;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 25px;
+}
+
+.planner-text {
+    width: 307px;
+    display: flex;
+    flex-direction: column;
+}
+
+.planner-text p {
+    margin-bottom: 50px;
+}
+
+.planner-info {
+    display: flex;
+    gap: 115px;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-wrapper h1 {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+.info-wrapper p {
+    text-align: center;
+}
+
+.pomodoro-text {
+    position: relative;
+    height: 260px;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pomodoro-text p {
+    margin-bottom: 50px;
+}
+
+.timer-text {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5em;
+    color: #caf808;
+}
+
+.timer {
+    font-weight: 700;
+    font-size: 75px;
+    color: #fff;
+}
+
+.timer-span {
+    font-weight: 700;
+    font-size: 75px;
+    color: #caf808;
+}
+
+.timer-wrapper {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pomodoro {
+    height: 450px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 200px;
+}
+
+.pomodoro-text .section-name,
+.pomodoro-text .section-title,
+.pomodoro-text p {
+    text-align: right;
+}
+
+.pomodoro-text .btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.guide-info {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+
+.guide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guide-text p {
+    text-align: center;
+}
+
+.guide {
+    padding-top: 65px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.start {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start-inner {
+    padding: 0 25px 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 910px;
+    height: 372px;
+    background-color: #202020;
+}
+
+.start-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start-text p {
+    margin-bottom: 50px;
+}
+
+/*  FOOTER  */
+footer {
+    height: 320px;
+    background-color: #1e1e22;
+}
+
+.footer-inner {
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+    gap: 125px;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-main .nav-logo {
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-sections {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-subs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-link {
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color .2s ease;
+    color: #a0a0a0a6;
+}
+
+.footer-link:hover {
+    color: #CAF808;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-addition {
+    margin: 0 auto;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.addition-links {
+    display: flex;
+    gap: 30px;
 }
